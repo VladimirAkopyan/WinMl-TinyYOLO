@@ -35,7 +35,7 @@ namespace TinyYOLO
     {
         private const string MODEL_FILENAME = "TinyYOLO.onnx";
 
-        private readonly SolidColorBrush lineBrush = new SolidColorBrush(Windows.UI.Colors.Yellow);
+        private readonly SolidColorBrush lineBrush = new SolidColorBrush(Windows.UI.Colors.DarkOrange);
         private readonly SolidColorBrush fillBrush = new SolidColorBrush(Windows.UI.Colors.Transparent);
         private readonly double lineThickness = 2.0;
 
@@ -292,6 +292,7 @@ namespace TinyYOLO
 
         private async Task EvaluateVideoFrameAsync(VideoFrame inputFrame)
         {
+
             if (inputFrame != null)
             {
                 try
