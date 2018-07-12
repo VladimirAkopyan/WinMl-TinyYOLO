@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="42e0d173-9a1b-4619-9aac-1193ac3f96d7" Publisher="CN=sevans" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="42e0d173-9a1b-4619-9aac-1193ac3f96d7" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="Quickbird.ObjectDetector" Publisher="CN=DEA474EA-7A07-4156-AECE-47E2BF3D23F2" Version="1.1.2.0" />
+  <mp:PhoneIdentity PhoneProductId="d1be14c1-f9c8-4904-8633-3148f86aa678" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>TinyYOLO</DisplayName>
-    <PublisherDisplayName>sevans</PublisherDisplayName>
+    <DisplayName>Object Detector</DisplayName>
+    <PublisherDisplayName>Quickbird</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -15,8 +15,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TinyYOLO.App">
-      <uap:VisualElements DisplayName="TinyYOLO" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="TinyYOLO" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+      <uap:VisualElements DisplayName="Object Detector" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Object Detector uses Yolo neural network to detect objects from the webcam video feed. This applicaiton is a technical demo using capabilities of windows-ml. The project is open-source. https://github.com/sevans4067/WinMl-TinyYOLO" BackgroundColor="transparent">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
